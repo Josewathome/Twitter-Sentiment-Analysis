@@ -1,0 +1,4 @@
+# python -m textblob.download_corpora
+tweepy
+textblob
+
