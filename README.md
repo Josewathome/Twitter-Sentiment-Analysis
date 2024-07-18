@@ -27,9 +27,9 @@ This project implements a real-time Twitter sentiment analysis tool focused on M
 
 ## Sample Output
 My search and analysis key word : Machine Learning
-Positive tweets percentage: 55.00%
-Negative tweets percentage: 10.00%
-Neutral tweets percentage: 35.00%
+- Positive tweets percentage: 55.00%
+- Negative tweets percentage: 10.00%
+- Neutral tweets percentage: 35.00%
 
 ## Learning Outcome
 This project demonstrates proficiency in:
