@@ -1,0 +1,55 @@
+the following was an analysis i did on my Twitter account on the topic of Machine LEARNING.
+i used textblob and twikit in my analysis.
+output: at 9:37 am kenyan time on 7/18/2024
+PS C:\Users\Administrator\Desktop\GR8 JOB INTELLIGENCE\GENERATIVE AI LEARNING\LLM PROJECTS\Twitter-sentiment-analysis> python t_code.py
+My search and analysis key word : Machine Learning
+Positive tweets percentage: 55.00%
+Negative tweets percentage: 10.00%
+Neutral tweets percentage: 35.00%
+
+
+Positive tweets:
+🚀 Major AI updates! 
+
+- Llama 2 is here with 2T tokens &amp; double context length! 🌍
+- Beware of GPT-4 Vision Prompt Injection vulnerabilities! 🛡️
+- Meta's AudioCraft family generates high-quality audio from text! 🎶
+
+Stay tuned for more! #AI #MachineLearning #AIUpdates
+While intelligent adults are making life changing discoveries with AI and machine learning algorithms in labs, these public commercial models are busy trying to convince people that pink huskies are illegal and 2+2 equals eleventeen.
+Do everyone needs to learn #LLMs? If you have the same question, this is for you.
+
+Here’s a guide on who should learn LLMs and how much you need to learn about LLMs!
+
+#DataScience #MachineLearning #artificalintelligence 
+
+https://t.co/c86NSWGVYT
+Need help with online exams, assignments, research projects, or dissertations? Look no further! I can assist with proofreading, personal statements, and more. Let's tackle #MachineLearning, #DataScience, #Python, #Cybersecurity, #BigData, #AI, #IoT, #DeepLearning,
+Day 1️⃣ of #100DaysOfDataScience : Completed the first course from PMLE! 🎉 Preparing for the PMLE certification, aiming to finish in 2 months. Any suggestions or tips are welcome! Let's do this! 💪📊 #DataScience #Machi
+neLearning #LearningJourney
+
+
+Negative tweets:
+NVIDIA A10 GPUs at our partner Texas data center for an unbeatable price of just $0.75 per GPU/hour.
+
+Specs:
+vCPUs: 2
+Memory: 1026 GB
+Cores: 128
+GPUs: 8
+
+🔗 Rent today at https://t.co/mtcgiSMHUq
+
+#GPU #AI #DataCenter #TechInnovation #MachineLearning #deeplearning #NvidiaGTC https://t.co/7BswjTWN36
+Dimensionality Reduction uses Principle Component Analysis for reducing the dimensions.
+
+- Uses Logistic Regression, Support Vector Machines (SVMs), Naive Bayes, and Convolutional Neural Networks (CNN).
+
+3/4
+
+...
+
+#AI
+#MachineLearning
+#ComputerVision
+PS C:\Users\Administrator\Desktop\GR8 JOB INTELLIGENCE\GENERATIVE AI LEARNING\LLM PROJECTS\Twitter-sentiment-analysis> 
