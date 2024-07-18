@@ -1,4 +1,5 @@
-# Twitter Sentiment Analysis for Machine Learning Discourse
+# Twitter Sentiment Analysis for Machine Learning
+# Natural Language Processing
 
 ## Overview
 This project implements a real-time Twitter sentiment analysis tool focused on Machine Learning discussions. It captures the public sentiment towards Machine Learning topics, providing insights into current trends and attitudes in the tech community.
