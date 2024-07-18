@@ -69,9 +69,9 @@ async def main():
     
     # Login to Twitter
     await client.login(
-        auth_info_1='JoseGW7',
+        auth_info_1='username or email',
         auth_info_2='YOUR_EMAIL_OR_PHONE',
-        password='P9jBq@Qb1Mqa$Oh'
+        password='your password'
     )
     
     try:
