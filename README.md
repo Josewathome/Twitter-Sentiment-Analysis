@@ -23,7 +23,7 @@ This project implements a real-time Twitter sentiment analysis tool focused on M
 ## Usage
 1. Update the `t_code.py` file with your Twitter credentials.
 2. Run the script: python t_code.py
-3. 3. Enter your search keyword when prompted (e.g., "Machine Learning").
+3. Enter your search keyword when prompted (e.g., "Machine Learning").
 
 ## Sample Output
 My search and analysis key word : Machine Learning
