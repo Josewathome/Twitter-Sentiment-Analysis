@@ -1,48 +1,61 @@
-# Twitter Sentiment Analysis for Machine Learning
-# Natural Language Processing
+---
+## Twitter Sentiment Monitor for ML Discussions
 
-## Overview
-This project implements a real-time Twitter sentiment analysis tool focused on Machine Learning discussions. It captures the public sentiment towards Machine Learning topics, providing insights into current trends and attitudes in the tech community.
+### Problem
 
-## Features
-- Real-time fetching of tweets related to Machine Learning
-- Sentiment analysis of tweets (Positive, Negative, Neutral)
-- Asynchronous processing for improved performance
-- Presentation of sentiment distribution and sample tweets
+Tracking public sentiment around Machine Learning topics on Twitter is noisy, rate limited, and difficult to process in near real time without blocking or data loss. This project explores a lightweight, async first backend pipeline for collecting and analyzing short form social data under those constraints.
 
-## Technologies Used
-- Python
-- Twikit: For Twitter API interaction
-- TextBlob: For sentiment analysis
-- Regular Expressions: For text cleaning
-- Asyncio: For asynchronous programming
+### What this system does
 
-## Installation
-1. Clone this repository: https://github.com/Josewathome/Twitter-Sentiment-Analysis
-2. Navigate to the project directory: cd twitter-ml-sentiment-analysis
-3. Install required packages: pip install -r requirements.tx
-## Usage
-1. Update the `t_code.py` file with your Twitter credentials.
-2. Run the script: python t_code.py
-3. Enter your search keyword when prompted (e.g., "Machine Learning").
+This service fetches recent tweets related to Machine Learning keywords, cleans and normalizes the text, and performs sentiment classification to surface aggregate sentiment trends and representative samples.
 
-## Sample Output
-My search and analysis key word : Machine Learning
-- Positive tweets percentage: 55.00%
-- Negative tweets percentage: 10.00%
-- Neutral tweets percentage: 35.00%
+The system is designed to prioritize throughput and responsiveness over model complexity, making it suitable for rapid sentiment monitoring rather than offline analytics.
 
-## Learning Outcome
-This project demonstrates proficiency in:
-1. Working with social media APIs and handling real-time data streams.
-2. Implementing natural language processing techniques for sentiment analysis.
-3. Developing asynchronous Python applications for improved performance.
-4. Data preprocessing and cleaning techniques for unstructured text data.
-5. Interpreting and presenting sentiment analysis results in a meaningful way.
-6. Understanding the challenges and limitations of automated sentiment analysis, particularly in technical domains.
+### Architecture overview
 
-This project showcases the ability to create practical NLP applications that can provide valuable insights into public opinion on technical topics, a skill highly relevant in today's data-driven tech landscape.
+* Asynchronous tweet fetching to avoid blocking on network IO
+* Text normalization and cleaning using deterministic rules
+* Sentiment classification using a lightweight NLP model
+* Aggregation layer to compute sentiment distribution and sample outputs
 
+The design intentionally avoids heavy ML pipelines in favor of predictable execution and fast iteration.
 
-## Contact
-Name - [@JoseGW7](https://twitter.com/JoseGW7)
+### Key design decisions
+
+* Asyncio is used to handle IO bound workloads without introducing external message queues
+* TextBlob is chosen for sentiment scoring due to its simplicity and low operational overhead
+* Processing is done in memory to reduce latency and complexity
+* Output is optimized for human inspection rather than long term storage
+
+This tradeoff makes the system easy to extend while keeping runtime behavior transparent.
+
+### Technologies
+
+* Python
+* Asyncio
+* Twikit
+* TextBlob
+* Regular Expressions
+
+### Running the project
+
+1. Clone the repository
+2. Install dependencies from `requirements.txt`
+3. Add Twitter credentials to `t_code.py`
+4. Run the script and provide a search keyword when prompted
+
+### Example output
+
+Search keyword: Machine Learning
+Positive: 55 percent
+Negative: 10 percent
+Neutral: 35 percent
+
+### Scope and limitations
+
+* This is not a production grade sentiment model
+* Sarcasm and domain specific language are not fully handled
+* Twitter API rate limits apply
+* Results are intended for trend inspection, not decision automation
+
+---
